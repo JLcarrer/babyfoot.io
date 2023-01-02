@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import io from 'socket.io-client';
-const socket = io('http://localhost:3001/');
+const socket = io('http://141.145.210.192:3001/');
 
 const createRoomButton = document.getElementById('createRoomButton');
 const joinRoomButton = document.getElementById('joinRoomButton');
@@ -15,7 +15,7 @@ let current = null;
 let babyfoot = null;
 let ballMesh;
 
-const url = 'http://localhost:3000/'
+const url = 'http://141.145.210.192:3000/'
 
 function initialiseThree(){
   scene = new THREE.Scene();
