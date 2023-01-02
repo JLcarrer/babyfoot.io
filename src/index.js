@@ -15,7 +15,7 @@ let current = null;
 let babyfoot = null;
 let ballMesh;
 
-const url = 'http://141.145.210.192:3000/'
+const url = 'http://141.145.210.192:80/'
 
 function initialiseThree(){
   scene = new THREE.Scene();

@@ -21,8 +21,8 @@ app.get('/babyfoot', (req, res) => {
     console.log("Sending babyfoot model");
 });
 
-app.listen(3000, () => {
-    console.log('Express listening on port 3000');
+app.listen(80, () => {
+    console.log('Express listening on port 80');
 });
 
 io.on('connection', (socket) => {
