@@ -1,0 +1,209 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.49",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Collider",
+            "scale" : [
+                11,
+                1,
+                6
+            ],
+            "translation" : [
+                0,
+                1,
+                0
+            ]
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "scale"
+                    }
+                }
+            ],
+            "name" : "Collider",
+            "samplers" : [
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 5
+                },
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 6
+                },
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 7
+                }
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 104,
+            "max" : [
+                1.0909091234207153,
+                2,
+                1
+            ],
+            "min" : [
+                -1.0909091234207153,
+                -2,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 104,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 104,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 162,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2,
+            "max" : [
+                0.041666666666666664
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 2,
+            "type" : "VEC3"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1248,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 832,
+            "byteOffset" : 1248,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1248,
+            "byteOffset" : 2080,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 324,
+            "byteOffset" : 3328,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8,
+            "byteOffset" : 3652
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24,
+            "byteOffset" : 3660
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 3684
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24,
+            "byteOffset" : 3716
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 3740,
+            "uri" : "data:application/octet-stream;base64,AACAvwAAAAAAAIA/AACAvwAAAAAAAIA/AACAvwAAAAAAAIA/AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/AACAvwAAAAAAAIC/AACAvwAAAAAAAIC/AACAvwAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AACAPwAAAAAAAIC/AACAvwAAAABMpqq+AACAvwAAAABMpqq+AACAvwAAAABMpqq+AACAvwAAAABMpqq+AACAvwAAAABMpqq+AACAPwAAAABMpqq+AACAPwAAAABMpqq+AACAPwAAAABMpqq+AACAPwAAAABMpqq+AACAPwAAAABMpqq+AACAvwAAAADarKo+AACAvwAAAADarKo+AACAvwAAAADarKo+AACAvwAAAADarKo+AACAvwAAAADarKo+AACAPwAAAADarKo+AACAPwAAAADarKo+AACAPwAAAADarKo+AACAPwAAAADarKo+AACAPwAAAADarKo+AACAPwAAAEAAAIC/AACAPwAAAEBMpqq+AACAPwAAAEBMpqq+AACAPwAAAEBMpqq+AACAPwAAAEAAAIA/AACAPwAAAEDarKo+AACAPwAAAEDarKo+AACAPwAAAEDarKo+AACAvwAAAEAAAIA/AACAvwAAAEDarKo+AACAvwAAAEDarKo+AACAvwAAAEDarKo+AACAvwAAAEAAAIC/AACAvwAAAEBMpqq+AACAvwAAAEBMpqq+AACAvwAAAEBMpqq+AACAvwAAAEAAAIA/AACAPwAAAEAAAIA/AACAvwAAAEAAAIC/AACAPwAAAEAAAIC/6aKLPwAAAABMpqq+6aKLPwAAAABMpqq+6aKLPwAAAABMpqq+6aKLPwAAAABMpqq+6aKLPwAAAEBMpqq+6aKLPwAAAEBMpqq+6aKLPwAAAEBMpqq+6aKLPwAAAADarKo+6aKLPwAAAADarKo+6aKLPwAAAADarKo+6aKLPwAAAADarKo+6aKLPwAAAEDarKo+6aKLPwAAAEDarKo+6aKLPwAAAEDarKo+6aKLvwAAAADarKo+6aKLvwAAAADarKo+6aKLvwAAAADarKo+6aKLvwAAAADarKo+6aKLvwAAAEDarKo+6aKLvwAAAEDarKo+6aKLvwAAAEDarKo+6aKLvwAAAABMpqq+6aKLvwAAAABMpqq+6aKLvwAAAABMpqq+6aKLvwAAAABMpqq+6aKLvwAAAEBMpqq+6aKLvwAAAEBMpqq+6aKLvwAAAEBMpqq+AACAvwAAAMDarKo+AACAvwAAAMDarKo+AACAvwAAAMDarKo+AACAvwAAAMBMpqq+AACAvwAAAMBMpqq+AACAvwAAAMBMpqq+LrpovwAAAMDarKo+LrpovwAAAMDarKo+LrpovwAAAMDarKo+LrpovwAAAMBMpqq+LrpovwAAAMBMpqq+LrpovwAAAMBMpqq+AACAPwAAAMBMpqq+AACAPwAAAMBMpqq+AACAPwAAAMBMpqq+AACAPwAAAMDarKo+AACAPwAAAMDarKo+AACAPwAAAMDarKo+LrpoPwAAAMBMpqq+LrpoPwAAAMBMpqq+LrpoPwAAAMBMpqq+LrpoPwAAAMDarKo+LrpoPwAAAMDarKo+LrpoPwAAAMDarKo+AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAAAAANqsqj4AAAAA2qyqPgAAAADarKo+AAAAANqsqj4AAAAA2qyqPgAAgD/arKo+AACAP9qsqj4AAIA/2qyqPgAAgD/arKo+AACAP9qsqj4AAAAANqsqPwAAAAA2qyo/AAAAADarKj8AAAAANqsqPwAAAAA2qyo/AACAPzarKj8AAIA/NqsqPwAAgD82qyo/AACAPzarKj8AAIA/NqsqPwAAgD8AAAAAAACAP9qsqj4AAIA/2qyqPgAAgD/arKo+AACAPwAAgD8AAIA/NqsqPwAAgD82qyo/AACAPzarKj8AAAAAAACAPwAAAAA2qyo/AAAAADarKj8AAAAANqsqPwAAAAAAAAAAAAAAANqsqj4AAAAA2qyqPgAAAADarKo+AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAIA/2qyqPgAAgD/arKo+AACAP9qsqj4AAIA/2qyqPgAAgD/arKo+AACAP9qsqj4AAIA/2qyqPgAAgD82qyo/AACAPzarKj8AAIA/NqsqPwAAgD82qyo/AACAPzarKj8AAIA/NqsqPwAAgD82qyo/AAAAADarKj8AAAAANqsqPwAAAAA2qyo/AAAAADarKj8AAAAANqsqPwAAAAA2qyo/AAAAADarKj8AAAAA2qyqPgAAAADarKo+AAAAANqsqj4AAAAA2qyqPgAAAADarKo+AAAAANqsqj4AAAAA2qyqPgAAAAA2qyo/AAAAADarKj8AAAAANqsqPwAAAADarKo+AAAAANqsqj4AAAAA2qyqPgAAAAA2qyo/AAAAADarKj8AAAAANqsqPwAAAADarKo+AAAAANqsqj4AAAAA2qyqPgAAgD/arKo+AACAP9qsqj4AAIA/2qyqPgAAgD82qyo/AACAPzarKj8AAIA/NqsqPwAAgD/arKo+AACAP9qsqj4AAIA/2qyqPgAAgD82qyo/AACAPzarKj8AAIA/NqsqPwAAAAAAAAAAAACAvwAAAAAAAIA/AAAAgAAAgD8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAAAAAACAvwAAAAAAAIA/AAAAgAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAgAAAgD8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAAAAAACAPwAAAAAAAIA/AAAAgGi8f79n/Tm9AAAAgAAAAAAAAAAA//9/PwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAgAAAgD8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAAAA//9/PwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAgGi8fz9n/Tm9AAAAgGi8f79n/Tm9AAAAgAAAAAAAAAAAAACAvwAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgAAAgD8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAAAAAACAvwAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgGi8fz9n/Tm9AAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAPwAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAvwAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAvwAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAPwAAgD8AAAAAAAAAgAAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAgL8AAAAAAAAAgGi8f79n/Tk9AAAAgAAAAAAAAAAA//9/PwAAAAAAAAAAAACAPwAAgL8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAPwAAgL8AAAAAAAAAgGi8f79n/Tk9AAAAgAAAAAAAAAAAAACAvwAAAAAAAAAA//9/vwAAgL8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAA//9/v2i8fz9n/Tk9AAAAgAAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAvwAAgD8AAAAAAAAAgAAAAAAAAAAA//9/PwAAAAAAAAAAAACAP2i8fz9n/Tk9AAAAgAAAgD8AAAAAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAAAAAACAPwAAgD8AAAAAAAAAgAAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgGi8fz9n/Tk9AAAAgAAAAAAAAAAA//9/PwAAAAAAAIA/AAAAgGi8fz9n/Tk9AAAAgGi8f79n/Tm9AAAAgAAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgGi8f79n/Tm9AAAAgAAAAAAAAAAA//9/PwAAAAAAAIA/AAAAgGi8f79n/Tk9AAAAgAAAAAAAAAAA//9/PwAAAAAAAIA/AAAAgGi8f79n/Tk9AAAAgAAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgAAAAAAAAAAA//9/PwAAAAAAAIA/AAAAgGi8fz9n/Tm9AAAAgAAAAAAAAAAA//9/vwAAAAAAAIA/AAAAgGi8fz9n/Tm9AAAAgA8AFAALAA8ACwAHABkAHgAUABkAFAAPAAEABQAeAAEAHgAZAAkAEQAhAAkAIQAgABsAAwAkABsAJAAlAAIAGgArAAIAKwAoABAACAAsABAALAAvAAQAAAAwAAQAMAAxAAYACgAzAAYAMwAyACMAEwA3ACMANwA6ABwAJwBBABwAQQA9ADQAOwA/ADQAPwA4ACoAFwBCACoAQgBHAA4ALgBOAA4ATgBKAEUATABPAEUATwBIAEYATQAtAEYALQApADkAQAAmADkAJgAiAEsARABSAEsAUgBVAFQAUQBYAFQAWABbAAwAWQBWAAwAVgAWAEkAUwBaAEkAWgANABgAVwBQABgAUABDADwANQBcADwAXABfAGEAXgBjAGEAYwBmAB8AZwBkAB8AZAAVABIAYgBdABIAXQA2AD4AYABlAD4AZQAdAAAAAACrqio9AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAAAAAAACAAACAPwAAAAAAAAAAAAAAgAAAgD8AADBBAACAPwAAwEAAADBBAACAPwAAwEA="
+        }
+    ]
+}
