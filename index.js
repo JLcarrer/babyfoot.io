@@ -187,7 +187,9 @@ class Room{
         let bluePosition = this.ballBody.position + (this.bluePing / 1000) * this.ballBody.velocity;
         this.red.emit('updateBall', redPosition);
         this.blue.emit('updateBall', bluePosition);
-        console.log(this.ballBody.position);
+        console.log('oroginal : ' + this.ballBody.position);
+        console.log('red : ' + redPosition);
+        console.log('blue : ' + bluePosition);
     }
 
     updatePlayer(data){
