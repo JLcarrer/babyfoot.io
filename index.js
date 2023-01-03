@@ -183,8 +183,14 @@ class Room{
     }
 
     updateBall(){
-        let redPosition = this.ballBody.position + (this.redPing / 1000) * this.ballBody.velocity;
-        let bluePosition = this.ballBody.position + (this.bluePing / 1000) * this.ballBody.velocity;
+        const xp = this.ballBody.position.x;
+        const yp = this.ballBody.position.y;
+        const zp = this.ballBody.position.z;
+        const xv = this.ballBody.velocity.x;
+        const yv = this.ballBody.velocity.y;
+        const zv = this.ballBody.velocity.z;
+        let redPosition = new CANNON.Vec3(xp + ((this.redPing / 1000) * xv, yp + ((this.redPing / 1000) * yv), zp + ((this.redPing / 1000) * zv)));
+        let bluePosition = new CANNON.Vec3(xp + ((this.bluePing / 1000) * xv, yp + ((this.bluePing / 1000) * yv), zp + ((this.bluePing / 1000) * zv)));
         this.red.emit('updateBall', redPosition);
         this.blue.emit('updateBall', bluePosition);
         console.log('oroginal : ' + this.ballBody.position);
