@@ -168,7 +168,7 @@ document.addEventListener('keydown', (event) => {
     case 't':
       reset();
       break;
-    case ' ':
+    case 'b':
       socket.emit('runBall');
       break;
   }
