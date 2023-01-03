@@ -57,6 +57,12 @@ io.on('connection', (socket) => {
         });
     });
 
+    socket.on('runBall', () => {
+        rooms.forEach((room) => {
+            room.runBall();
+        });
+    });
+
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
