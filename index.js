@@ -63,6 +63,21 @@ io.on('connection', (socket) => {
         });
     });
 
+    socket.on('ping', (ms) => {
+        socket.emit('pong', ms);
+    });
+
+    socket.on('setPing', (ping) => {
+        rooms.forEach((room) => {
+            if(room.red == socket){
+                room.redPing = ping;
+            }
+            if(room.blue == socket){
+                room.bluePing = ping;
+            }
+        });
+    })
+
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
@@ -76,6 +91,8 @@ class Room{
     constructor(name, player){
         this.name = name;
         this.red = player;
+        this.redPing = 0;
+        this.bluePing = 0;
         this.world = new CANNON.World();
         this.world.gravity.set(0, -9.82, 0);
         this.playerStartPos = [];
@@ -166,8 +183,10 @@ class Room{
     }
 
     updateBall(){
-        this.red.emit('updateBall', this.ballBody.position);
-        this.blue.emit('updateBall', this.ballBody.position);
+        let redPosition = this.ballBody.position + this.redPing * this.ballBody.velocity;
+        let bluePosition = this.ballBody.position + this.bluePing * this.ballBody.velocity;
+        this.red.emit('updateBall', redPosition);
+        this.blue.emit('updateBall', bluePosition);
         console.log(this.ballBody.position);
     }
 

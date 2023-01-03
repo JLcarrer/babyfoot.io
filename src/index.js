@@ -56,6 +56,12 @@ socket.on('updatePlayer', (data) => {
   console.log(data);
 });
 
+socket.on('pong', (ms) => {
+  const ping = Date.now() - ms;
+  socket.emit('setPing', ping);
+  console.log(ping);
+});
+
 socket.on('start', () => {
   window.requestAnimationFrame(loop);
 });
@@ -120,6 +126,11 @@ function gravityRotation(){
       babyfoot.children[team[i]].rotation.z = lerp(babyfoot.children[team[i]].rotation.z, 0, 0.05);
     }
   }
+}
+
+function pingLoop(){
+  socket.emit('ping', Date.now());
+  setTimeout(() => pingLoop(), 5000);
 }
 
 function reset(){
