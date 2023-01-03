@@ -168,6 +168,7 @@ class Room{
     updateBall(){
         this.red.emit('updateBall', this.ballBody.position);
         this.blue.emit('updateBall', this.ballBody.position);
+        console.log(this.ballBody.position);
     }
 
     updatePlayer(data){
