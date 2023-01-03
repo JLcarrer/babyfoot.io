@@ -183,8 +183,8 @@ class Room{
     }
 
     updateBall(){
-        let redPosition = this.ballBody.position + this.redPing * this.ballBody.velocity;
-        let bluePosition = this.ballBody.position + this.bluePing * this.ballBody.velocity;
+        let redPosition = this.ballBody.position + (this.redPing / 1000) * this.ballBody.velocity;
+        let bluePosition = this.ballBody.position + (this.bluePing / 1000) * this.ballBody.velocity;
         this.red.emit('updateBall', redPosition);
         this.blue.emit('updateBall', bluePosition);
         console.log(this.ballBody.position);
