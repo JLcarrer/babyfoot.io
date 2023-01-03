@@ -64,6 +64,7 @@ socket.on('pong', (ms) => {
 
 socket.on('start', () => {
   window.requestAnimationFrame(loop);
+  pingLoop();
 });
 
 initialiseThree();
